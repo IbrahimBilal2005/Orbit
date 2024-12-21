@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -8,9 +9,9 @@ import java.util.List;
 public class Parent extends User {
     private final List<Child> children;
 
-    public Parent(String username, String password, String firstName, String lastName, List<Child> children) {
+    public Parent(String username, String password, String firstName, String lastName) {
         super(username, password, firstName, lastName);
-        this.children = children;
+        this.children = new ArrayList<>();
     }
 
     public List<Child> getChildren() { return children; }

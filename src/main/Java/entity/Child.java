@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,12 +11,11 @@ public class Child extends User {
     private final List<Task> completedTasks;
     private final Integer points;
 
-    public Child(String username, String password, String firstName, String lastName,
-                 List<Task> pendingTasks, List<Task> completedTasks, Integer points) {
+    public Child(String username, String password, String firstName, String lastName) {
         super(username, password, firstName, lastName);
-        this.pendingTasks = pendingTasks;
-        this.completedTasks = completedTasks;
-        this.points = points;
+        this.pendingTasks = new ArrayList<>();
+        this.completedTasks = new ArrayList<>();
+        this.points = 0;
     }
 
     public List<Task> getPendingTasks() { return pendingTasks; }
