@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Entity representing a single Family in the systen
+ * Entity representing a single Family in the system.
  */
 public class Family {
     private final String familyId;
