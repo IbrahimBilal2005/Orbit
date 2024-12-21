@@ -6,10 +6,10 @@ import java.time.LocalDateTime;
  * Class representing a Task in the program.
  */
 public class Task {
-    private final String id; // Unique identifier for the task
+    private final String id;
     private final String title;
     private final String description;
-    private final String assigneeUsername; // Store reference to assignee's username
+    private final String assigneeUsername;
     private final LocalDateTime dueDate;
     private boolean isCompleted;
 
